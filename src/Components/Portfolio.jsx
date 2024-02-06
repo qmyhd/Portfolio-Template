@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/uvaravens.jpg";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "UVA RAVENS";
 
 /**
  * Project list
@@ -31,21 +31,20 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Drop o'Clock 🎉",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Premier cook group and bot rental service. I designed the server and managed the community.",
+    url: "https://dropoclock.com/",
   },
   {
-    title: "Web Development for Beginners",
+    title: "QBOT, AI chatbot",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Developed QBOT, an AI chatbot built on the ChatGPT framework. The project employs Natural Language Processing (NLP) algorithms and ML models for real-time learning. It incorporates long-term memory capabilities and follows a customized instruction set, making each conversation more context-aware and meaningful. QBOT has been designed to learn and grow with the user, mirroring their personal information, real-world talents, skills, and mannerisms to understand their value in different situations.",
+    url: "https://github.com/qmyhd/QBOT_2.0",
   },
   {
-    title: "My Resume Site",
-    description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
+    title: "My Linkedin Site",
+    description: "My Linkedin site and Resume",
     url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
   },
   {
