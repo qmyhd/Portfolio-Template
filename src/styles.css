@@ -136,3 +136,16 @@ img.socialIcon {
     transform: translateX(0);
   }
 }
+
+.name-title h1, .name-title h2 {
+  color: #FFF; /* Example color, adjust as needed */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* Adds a shadow for better visibility */
+  animation: slideInLeft 1s ease-in-out; /* Animate the text in */
+}
+
+.trianglify-background {
+  background-image: url('https://github.com/qmyhd/Portfolio-Template/blob/main/src/images/white-trianglify-b79c7e1f.jpg'); /* Path to your image */
+  background-size: cover; /* Cover ensures that the background covers the whole area */
+  background-position: center; /* Center the image in the available space */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}

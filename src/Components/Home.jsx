@@ -26,9 +26,12 @@ const imageAltText = "Qais Headshot";
 
 const Home = ({ name, title }) => {
   return (
-    <section id="home" className="min-height">
+    <section id="home" className="min-height trianglify-background">
       <img className="background" src={image} alt="" style={{ width: "50%", marginTop: "9rem" }} />
-      <div style={{ position: "absolute", top: "7rem", left: "4rem", width: "19rem" }}>
+      <div
+        style={{ position: "absolute", top: "7rem", left: "2rem", width: "19rem" }}
+        className="name-title"
+      >
         <h1>{name}</h1>
         <h2>{title}</h2>
       </div>
