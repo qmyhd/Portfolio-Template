@@ -24,10 +24,37 @@ div#main {
   flex-direction: column;
   width: 100vw;
 }
+/* Header styles */
+.header-nav {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #333; /* A dark background for contrast */
+}
 
+.header-nav a {
+  font-family: 'Roboto', sans-serif; /* A modern, clean font */
+  font-weight: 700; /* Equivalent to 'bold' */
+  color: #490d1f; /* White text for contrast */
+  text-decoration: none; /* Removes underlines from links */
+  margin: 0 1rem; /* Adds horizontal space between links */
+  padding: 0.5rem 1rem; /* Top and bottom, Left and right padding */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.header-nav a:hover {
+  background-color: #6451e374; /* A green background on hover */
+  border-radius: 5px; /* Rounded corners for the hover effect */
+}
+
+/* Active link styles */
+.header-nav a.active {
+  border-bottom: 2px solid #4CAF50; /* Green bottom border for the active link */
+}
 section {
   position: relative;
   width: 100vw;
+  background-color: #faf2db; 
 }
 
 section.min-height {
@@ -49,37 +76,45 @@ section img.background {
   width: 100vmax;
   z-index: -1;
 }
-
+.about-content {
+  background-color: rgba(242,243,244, 0.729);
+  width: 50%;
+  padding: 4rem;
+  margin: 3rem auto;
+  text-align: center;
+  position: relative; /* This is critical for z-index to work */
+  z-index: 2; /* Ensures content is above the background image */
+}
 h1 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 7rem;
-  font-weight: 400;
-  line-height: 0.8;
+  font-size: 9rem;
+  font-weight: 700;
+  line-height: 0.88;
   margin: 0;
 }
 
 h2 {
   font-size: 2rem;
-  font-weight: 400;
-  margin: 0;
-  padding-top: 1rem;
+  font-weight: 500;
+  margin: 0.4;
+  padding-top: rem;
 }
 
 h3 {
-  font-weight: 400;
-  font-size: 1.25rem;
+  font-weight: 500;
+  font-size: 1.35rem;
   margin: 0;
 }
 
 p {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.5;
   margin-bottom: 0;
-  font-weight: 300;
+  font-weight: 350;
 }
 
 p.large {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 p.small {
@@ -101,6 +136,7 @@ li::marker {
 a {
   color: black;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 a:hover {
@@ -109,18 +145,18 @@ a:hover {
 
 .container {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 330px 300px;
+  grid-gap:25px;
+  grid-template-columns: 300px 350px;
   margin: 20px auto;
 }
 
 .container .box {
   border-radius: 10px;
-  border: 1px solid rgb(204, 204, 204);
+  border: 2px solid rgb(114, 70, 70);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 24px 16px;
+  padding: 11px 11px;
   text-align: center;
 }
 
@@ -138,14 +174,83 @@ img.socialIcon {
 }
 
 .name-title h1, .name-title h2 {
-  color: #FFF; /* Example color, adjust as needed */
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* Adds a shadow for better visibility */
+  color: #7b1113; /* Example color, adjust as needed */
+  text-shadow: 4px 2px 4px rgba(240, 180, 217, 0.925); /* Adds a shadow for better visibility */
   animation: slideInLeft 1s ease-in-out; /* Animate the text in */
 }
 
-.trianglify-background {
-  background-image: url('https://github.com/qmyhd/Portfolio-Template/blob/main/src/images/white-trianglify-b79c7e1f.jpg'); /* Path to your image */
-  background-size: cover; /* Cover ensures that the background covers the whole area */
-  background-position: center; /* Center the image in the available space */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
+section:not(.has-background-image) {
+  background-color: #faf2db; /* Your specific color code */
+}
+section.has-background-image img.background {
+  z-index: 1; /* Ensures the image is above the background color */
+}
+
+.name-title-text {
+  color: #d48224; /* Or any color that contrasts well with your background */
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5); /* Black shadow with some blur */
+}
+
+
+.education-section {
+  padding: 4rem 0;
+  background-color: #faf2dba9; /* Light background to keep it clean and professional */
+  color: #131212; /* Dark text for contrast */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  color: #490d1f; /* Adds a touch of elegance */
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px; /* Limit the width for better readability */
+  margin: 0 auto; /* Center align the education list */
+}
+
+.education-item {
+  background-color: #f9ecece8; /* White background for each item */
+  border: 2px solid #592020; /* Subtle border */
+  border-radius: 8px; /* Smooth corners */
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Soft shadow for depth */
+}
+
+.education-item-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.education-item-degree {
+  font-size: 1.2rem;
+  color: #666; /* Slightly lighter text for the degree and year */
+  margin-bottom: rem;
+}
+
+.education-item-details {
+  list-style: inside; /* Position bullets inside to align text nicely */
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.3rem; /* Add some space between list items */
+}
+
+@media (min-width: 768px) {
+  .education-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .education-item {
+    flex: 1;
+    min-width: calc(50% - 1rem); /* Adjust width on larger screens for 2-column layout */
+    margin-bottom: 2rem;
+  }
 }

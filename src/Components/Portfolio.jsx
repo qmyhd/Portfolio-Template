@@ -57,10 +57,12 @@ const projectList = [
 
 const Portfolio = () => {
   return (
-    <section className="padding min-height trianglify-background" id="portfolio">
+    <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
+      <p style={{ textAlign: "center" }}></p>
+      Below are some of my projects. Click on the title to view the project.
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+        <div style={{ maxWidth: "50%", alignSelf: "center" }}>
           <img
             src={image}
             alt={imageAltText}

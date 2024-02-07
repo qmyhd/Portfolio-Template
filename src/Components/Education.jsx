@@ -23,16 +23,16 @@ const educationData = [
 
 const Education = () => {
   return (
-    <section className="light min-height trianglify-background" id="education">
-      <h2>Education</h2>
+    <section className="education-section" id="education">
+      <h2 className="section-title">Education</h2>
       <div className="education-list">
         {educationData.map((edu, index) => (
           <div key={index} className="education-item">
-            <h3>{edu.school}</h3>
-            <p>
+            <h3 className="education-item-title">{edu.school}</h3>
+            <p className="education-item-degree">
               <strong>{edu.degree}</strong> - {edu.year}
             </p>
-            <ul>
+            <ul className="education-item-details">
               {edu.details.map((detail, detailIndex) => (
                 <li key={detailIndex}>{detail}</li>
               ))}

@@ -26,14 +26,14 @@ const imageAltText = "Qais Headshot";
 
 const Home = ({ name, title }) => {
   return (
-    <section id="home" className="min-height trianglify-background">
-      <img className="background" src={image} alt="" style={{ width: "50%", marginTop: "9rem" }} />
+    <section id="home" className="min-height has-background-image">
+      <img className="background" src={image} alt="" style={{ width: "52%", marginTop: "4rem" }} />
       <div
-        style={{ position: "absolute", top: "7rem", left: "2rem", width: "19rem" }}
-        className="name-title"
+        style={{ position: "absolute", top: "4rem", left: "1rem", width: "15rem" }}
+        className="name-title name-title-text"
       >
-        <h1>{name}</h1>
-        <h2>{title}</h2>
+        <h1 style={{ fontSize: "4rem" }}>{name}</h1>
+        <h2 style={{ fontSize: "1.9rem" }}>{title}</h2>
       </div>
       <div style={{ position: "absolute", bottom: "4rem", left: "50%" }}>
         <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
