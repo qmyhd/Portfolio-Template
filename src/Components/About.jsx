@@ -24,19 +24,23 @@ const imageAltText = "UVA Rotunda";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a fourth year Neuroscience student studying at the University of Virginia, and I plan to complete a Masters in Data Science at UVA next year.";
+  "Master’s student in Data Science at UVA with a background in Neuroscience, academic research, and administration. Passionate about AI, consulting, and financial/sports analytics.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "OpenAI Large Language Model's Integration (GPT-4)",
-  "User experience",
-  "Chatbots/Virtual Agent Development",
-  "Financial and Managerial Accounting",
-  "Salesforce",
-  "Svelte Kit, Notion, Zapier, WordPress",
+  "Machine Learning & Predictive Analytics",
+  "Large Language Models (GPT-4, LangChain, Pinecone)",
+  "Financial & Managerial Accounting",
+  "Data Engineering & Cloud Computing (AWS, Google Cloud, Azure)",
+  "SQL, Python (Pandas, NumPy, Scikit-learn), R",
+  "Scalable & Distributed Computing (Hadoop, Spark)",
+  "Time Series Forecasting & NLP",
+  "Salesforce & Tableau for Business Intelligence",
+  "Web Development & Automation (Svelte Kit, Notion, Zapier, WordPress)",
+  "Consulting & Strategic Resource Management",
 ];
 
 /**
@@ -45,7 +49,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my entrepreneurial and academic experience I continually look for new and better ways to solve problems with new technologies.";
+  "With experience in machine learning, cloud computing, and data-driven consulting, I thrive on solving problems efficiently. My background spans academia, entrepreneurship, and analytics—skills I’ve refined through leadership, strategic planning, and resource optimization.";
 
 const About = () => {
   return (
@@ -54,31 +58,38 @@ const About = () => {
       <div
         className="about-content"
         style={{
-          backgroundColor: "rgba(255, 255, 255, 0.8)",
-          width: "50%",
-          padding: "4rem",
+          backgroundColor: "rgba(255, 255, 255, 0.85)",
+          maxWidth: "750px",
+          padding: "3rem",
           margin: "3rem auto",
           textAlign: "center",
+          borderRadius: "12px",
+          boxShadow: "0px 8px 20px rgba(0, 0, 0, 0.1)",
         }}
       >
         <h2>About Myself</h2>
         <p className="large">{description}</p>
-        <hr />
+        <hr style={{ width: "80%", margin: "1.5rem auto" }} />
         <ul
           style={{
             textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
+            fontSize: "1.15rem",
+            margin: "2rem auto",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+            gap: "1rem",
+            listStyleType: "none",
+            padding: "0",
           }}
         >
           {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
+            <li key={skill} style={{ padding: "0.5rem 0", textAlign: "center" }}>
+              {skill}
+            </li>
           ))}
         </ul>
-        <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <hr style={{ width: "80%", margin: "1.5rem auto" }} />
+        <p style={{ padding: "1rem 2rem 0", fontStyle: "italic" }}>{detailOrQuote}</p>
       </div>
     </section>
   );

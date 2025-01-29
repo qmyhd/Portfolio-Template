@@ -254,3 +254,83 @@ li {
     margin-bottom: 2rem;
   }
 }
+/* Portfolio Section */
+.portfolio-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #490d1f;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Portfolio Container */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Image Styling */
+.portfolio-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Project List */
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+}
+
+/* Individual Portfolio Item */
+.portfolio-item {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0073e6;
+  transition: color 0.2s ease-in-out;
+}
+
+.portfolio-title:hover {
+  color: #005bb5;
+}
+
+.portfolio-description {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolio-container {
+    flex-direction: column;
+  }
+}

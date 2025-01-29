@@ -24,7 +24,7 @@ import "./styles.css";
  */
 const siteProps = {
   name: "Qais Youssef",
-  title: "Neuroscience '24 ",
+  title: "Data Science Master's Student & AI Enthusiast",
   email: "qais@virginia.edu",
   gitHub: "qmyhd",
   instagram: "qais.qmy",

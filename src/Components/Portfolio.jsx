@@ -33,54 +33,48 @@ const projectList = [
   {
     title: "Drop o'Clock 🎉",
     description:
-      "Premier cook group and bot rental service. I designed the server and managed the community.",
+      "Premier cook group and bot rental service. Designed the platform, managed the community, and optimized acquisition strategies.",
     url: "https://dropoclock.com/",
   },
   {
     title: "QBOT, AI chatbot",
     description:
-      "Developed QBOT, an AI chatbot built on the ChatGPT framework. The project employs Natural Language Processing (NLP) algorithms and ML models for real-time learning. It incorporates long-term memory capabilities and follows a customized instruction set, making each conversation more context-aware and meaningful. QBOT has been designed to learn and grow with the user, mirroring their personal information, real-world talents, skills, and mannerisms to understand their value in different situations.",
+      "Developed QBOT, an AI chatbot built on the ChatGPT framework.",
     url: "https://github.com/qmyhd/QBOT_2.0",
   },
   {
-    title: "My Linkedin Site",
-    description: "My Linkedin site and Resume",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+    title: "Consulting Case Competition - 1st Place",
+    description:
+      "Led a market analysis for Nunamaisha, utilizing SEO analytics and competitive benchmarking, culminating in a 30-slide client presentation.",
+    url: "https://www.linkedin.com/in/qaisyo",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Machine Learning Capstone",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Applied anomaly detection techniques on real-time roadway data to enhance traffic safety and optimize city planning.",
+    url: "https://github.com/qmyhd",
   },
 ];
 
 const Portfolio = () => {
   return (
-    <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <p style={{ textAlign: "center" }}></p>
-      Below are some of my projects. Click on the title to view the project.
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "50%", alignSelf: "center" }}>
-          <img
-            src={image}
-            alt={imageAltText}
-            style={{
-              height: "90%",
-              width: "100%",
-              objectFit: "cover",
-              animation: "1s ease-out 0s 1 slideIn",
-            }}
-          />
+    <section className="portfolio-section" id="portfolio">
+      <h2 className="section-title">Portfolio</h2>
+      <p className="section-description">
+        Below are some of my key projects, ranging from AI development to consulting competitions. Click on a title to learn more.
+      </p>
+
+      <div className="portfolio-container">
+        <div className="portfolio-image">
+          <img src={image} alt={imageAltText} />
         </div>
-        <div className="container">
+        <div className="portfolio-list">
           {projectList.map((project) => (
-            <div className="box" key={project.title}>
+            <div className="portfolio-item" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <h3 className="portfolio-title">{project.title}</h3>
               </a>
-              <p className="small">{project.description}</p>
+              <p className="portfolio-description">{project.description}</p>
             </div>
           ))}
         </div>

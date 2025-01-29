@@ -3,20 +3,19 @@ import React from "react";
 const educationData = [
   {
     school: "University of Virginia",
-    degree: "Bachelor of Arts in Neurocience",
-    year: "2020 - 2024",
+    degree: "Master of Science in Data Science",
+    year: "Expected May 2025",
     details: [
-      "Graduated with Honors, GPA: 3.7/4.0",
-      "Relevant coursework: Algorithms, Data Structures, Machine Learning, Web Development",
+      "GPA: 4.0/4.0",
+      "Relevant coursework: Bayesian Machine Learning, Linear Models for Data Science, Deep Learning, Data Engineering, Predictive Modeling, Advanced Regression & Data Visualization",
     ],
   },
   {
-    school: "Centreville High School",
-    degree: "High School Diploma with Honors",
+    school: "University of Virginia",
+    degree: "Bachelor of Arts in Neuroscience, Data Science Minor",
     year: "2016 - 2020",
     details: [
-      "Completed with Distinction, GPA: 4.3",
-      "Focused on foundational coursework in mathematics, science, and literature",
+      "Relevant coursework: Management & Financial Accounting, Microeconomics, Management Consulting Ethical Application of AI",
     ],
   },
 ];
